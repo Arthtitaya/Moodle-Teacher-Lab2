@@ -635,33 +635,33 @@ Default mark:  4
 ### **Workflow: Excel → GIFT → Import Moodle**
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  WORKFLOW การสร้างข้อสอบจาก Excel                               │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
+┌────────────────────────────────────────────────────────────────┐
+│  WORKFLOW การสร้างข้อสอบจาก Excel                                 │
+├────────────────────────────────────────────────────────────────┤
+│                                                                │
 │  1. เปิด moodle_question_template.xlsx                          │
-│     └─ เลือก Sheet ตามประเภทข้อสอบ                              │
-│                                                                   │
-│  2. กรอกข้อมูลตามตัวอย่างในแต่ละ Sheet                         │
-│     ├─ 1_MultipleChoice  → ปรนัยเลือกตอบ                        │
-│     ├─ 2_TrueFalse       → ถูก/ผิด                              │
+│     └─ เลือก Sheet ตามประเภทข้อสอบ                                │
+│                                                                │
+│  2. กรอกข้อมูลตามตัวอย่างในแต่ละ Sheet                               │
+│     ├─ 1_MultipleChoice  → ปรนัยเลือกตอบ                         │
+│     ├─ 2_TrueFalse       → ถูก/ผิด                               │
 │     ├─ 3_ShortAnswer     → เติมคำ                               │
-│     ├─ 4_Essay           → อัตนัย                               │
-│     ├─ 5_Matching        → จับคู่                               │
-│     └─ 6_Numerical       → ตัวเลข/คำนวณ                        │
-│                                                                   │
+│     ├─ 4_Essay           → อัตนัย                                │
+│     ├─ 5_Matching        → จับคู่                                 │
+│     └─ 6_Numerical       → ตัวเลข/คำนวณ                         │
+│                                                                │
 │  3. บันทึก Excel (Ctrl+S)                                        │
-│                                                                   │
-│  4. เปิด Command Prompt/Terminal แล้วรัน:                        │
-│     python convert_to_gift.py moodle_question_template.xlsx     │
-│                                                                   │
-│  5. ได้ไฟล์: moodle_question_template_gift_output.txt           │
-│                                                                   │
-│  6. Import เข้า Moodle                                           │
-│     รายวิชา → More → Question Bank → Import                      │
-│     → File format: GIFT → อัพโหลด .txt → Import                │
-│                                                                   │
-└─────────────────────────────────────────────────────────────────┘
+│                                                                │
+│  4. เปิด Command Prompt/Terminal แล้วรัน:                         │
+│     python convert_to_gift.py moodle_question_template.xlsx    │
+│                                                                │
+│  5. ได้ไฟล์: moodle_question_template_gift_output.txt            │
+│                                                                │
+│  6. Import เข้า Moodle                                          │
+│     รายวิชา → More → Question Bank → Import                     │
+│     → File format: GIFT → อัพโหลด .txt → Import                 │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
 ```
 
 ---
